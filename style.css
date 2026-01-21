@@ -1,0 +1,124 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #222;
+}
+
+.inner_column {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+
+.custom-lydia-wrapper {
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Outfit', sans-serif;
+    color: #EBE0D0;
+    background-color: #000;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+
+    width: 100%;
+    max-width: 1200px;
+
+    transform: scale(1.1);
+    transform-origin: top center;
+
+    font-size: 1.04166vw;
+}
+
+/* 1200px üstü */
+@media (min-width: 1200px) {
+    .custom-lydia-wrapper {
+        font-size: 12.5px;
+    }
+}
+
+/* MOBİL ZOOM */
+@media (max-width: 768px) {
+    .custom-lydia-wrapper {
+        width: 700px;
+        min-width: 700px;
+
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 7.29px;
+    }
+}
+
+
+.custom-lydia-bg { width: 100%; display: block; }
+.custom-lydia-absolute { position: absolute; z-index: 10; }
+
+.custom-lydia-logo { top: 1.8%; left: 28%; width: 45%; }
+.custom-lydia-top-text {
+    top: 6.2%; left: 10%; width: 80%;
+    text-align: center;
+    font-size: 1.2em;
+    text-shadow: 0.1em 0.1em 0.2em #000;
+}
+
+.custom-lydia-desc-1 {
+    top: 10%; left: 24%; width: 18%;
+    font-size: 1em; line-height: 1.5;
+}
+
+.custom-lydia-trailer-text {
+    font-size: 3.2em;
+    font-weight: bold;
+    text-shadow: 0.06em 0.06em 0.12em #000;
+}
+
+.custom-lydia-screen-1 { top: 21%; left: 23%; width: 26%; border-radius: 0.4em; }
+.custom-lydia-screen-2 { top: 21%; right: 24%; width: 26%; border-radius: 0.4em; }
+.custom-lydia-screen-3 { top: 31%; left: 23%; width: 26%; border-radius: 0.4em; }
+.custom-lydia-screen-4 { top: 31%; right: 24%; width: 26%; border-radius: 0.4em; }
+
+.custom-lydia-bottom-img { top: 41%; left: 41%; width: 18%; }
+
+.custom-lydia-credits-col {
+    width: 30%;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 2.5;
+    text-shadow: 0.05em 0.05em 0.1em #000000;
+}
+
+.custom-lydia-credits-left { top: 52%; left: 25%; }
+.custom-lydia-credits-right { top: 52%; left: 61%; }
+
+
+
+.custom-lydia-features {
+    top: 43%;
+    left: 22%;
+    width: 84%;
+
+    display: flex;
+    
+    gap: 2em; 
+}
+
+.custom-lydia-features .feature-col {
+    width: 32%;
+}
+
+.custom-lydia-features h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    color: #EBE0D0;
+}
+
+.custom-lydia-features p {
+ margin-top: 0;
+    line-height: 1.4;
+
+    font-size: 1em;
+   
+    margin-bottom: 1.6em;
+    color: #EBE0D0;
+}
