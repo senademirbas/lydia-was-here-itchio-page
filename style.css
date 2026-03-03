@@ -2,7 +2,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: visible !important;
     background-color: #222;
 }
 
@@ -45,7 +45,7 @@ html {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    overflow-x: hidden;
+    overflow: visible !important;
 }
 
 .custom-lydia-wrapper {
@@ -58,18 +58,18 @@ html {
 
     /* KUTUYU İTCH'DEN KOPARIP DİREKT TARAYICININ KENDİSİNE(VW) BAĞLADIK */
     /* Opera %150 oranını ekrana direkt yayarak fiziksel olarak verdim (75vw) */
-    width: 90vw !important;
-    max-width: 90vw !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
 
     /* Genişleyen kutuyu ortaya sabitliyoruz */
     left: 50%;
     transform: translateX(-50%);
 
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
+    
     overflow: visible;
 
     /* YAZILAR İLE KUTUNUN ORANI ASLA ŞAŞMAYACAK ("75vw'nin" %1.04'ü kadardır) */
-    font-size: 1.25vw !important;
+    font-size: 1.39vw !important;
 }
 
 /* 1920px üstü (Eğer ekran burayı aşarsa, DEV fontlar durur ve her şey kilitlenir) */
@@ -216,3 +216,5 @@ html {
     margin-bottom: 1.6em;
     color: #ebe0d0;
 }
+
+
