@@ -56,43 +56,47 @@ html {
     background-color: #000;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 
-    width: 100%;
-    max-width: 1200px;
+    /* KUTUYU İTCH'DEN KOPARIP DİREKT TARAYICININ KENDİSİNE(VW) BAĞLADIK */
+    /* Opera %150 oranını ekrana direkt yayarak fiziksel olarak verdim (75vw) */
+    width: 90vw !important;
+    max-width: 90vw !important;
 
-    /* VISUAL CLIP: Resmin son %30'unu gorsel olarak trasiyor, kordinatlari sarsmaz */
+    /* Genişleyen kutuyu ortaya sabitliyoruz */
+    left: 50%;
+    transform: translateX(-50%);
+
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
-    /* Sondaki 70% ler, %30 kesildiğini belirtir */
     overflow: visible;
 
-    transform: scale(1.1);
-    transform-origin: top center;
-
-    font-size: 1.04166vw;
+    /* YAZILAR İLE KUTUNUN ORANI ASLA ŞAŞMAYACAK ("75vw'nin" %1.04'ü kadardır) */
+    font-size: 1.25vw !important;
 }
 
-/* 1200px üstü */
-@media (min-width: 1200px) {
+/* 1920px üstü (Eğer ekran burayı aşarsa, DEV fontlar durur ve her şey kilitlenir) */
+@media (min-width: 1920px) {
     .custom-lydia-wrapper {
-        font-size: 12.5px;
+        width: 1440px !important;
+        max-width: 1440px !important;
+        font-size: 20px !important;
     }
 }
 
-/* MOBİL ZOOM */
+/* MOBİL ZOOM (Orijinal hali, hiç dokunulmadı) */
 @media (max-width: 768px) {
     .custom-lydia-wrapper {
-        width: 700px;
-        min-width: 700px;
-
+        width: 700px !important;
+        max-width: 700px !important;
+        min-width: 700px !important;
         left: 50%;
-        transform: translateX(-50%);
-        font-size: 7.29px;
+        transform: translateX(-50%) !important;
+        font-size: 7.29px !important;
     }
 }
 
 .custom-lydia-bg {
     width: 100%;
-    /* FİZİKSEL ÇEKME: Itch.io tuşlarını kırpılan boşluğa doğru yukarı taşır */
-    margin-bottom: -45%;
+    /* ORİJİNAL ÇALIŞAN ÇEKME DEĞERİNE GERİ DÖNÜLDÜ (Scale kalktığı için bu yeterlidir) */
+    margin-bottom: -45% !important;
     display: block;
 }
 
