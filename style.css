@@ -109,6 +109,11 @@ html {
     width: 75vw !important;
     max-width: 75vw !important;
 
+    /* Görseli ve kutuyu aşağıdan %34 oranında tamamen keser */
+    clip-path: inset(0 0 34% 0);
+    /* Kesilen boşluğu sistemden yok edip alt elementleri yukarı çeker */
+    margin-bottom: -44.09vw;
+
     /* Ortalamak için (overflow-x:hidden body'de zaten taşmayı gizler) */
     left: 50%;
     transform: translateX(-50%);
@@ -122,6 +127,7 @@ html {
     .custom-lydia-wrapper {
         width: 1080px !important;
         max-width: 1080px !important;
+        margin-bottom: -635px !important;
         font-size: 15px !important;
     }
 }
@@ -132,6 +138,7 @@ html {
         width: 75vw !important;
         max-width: 75vw !important;
         min-width: unset !important;
+        margin-bottom: -44.09vw !important;
         left: 50%;
         transform: translateX(-50%) !important;
         font-size: 5.47px !important;
@@ -143,10 +150,6 @@ html {
     /* Margin hilelerini kaldırdık ki tasarım veya footer kaymasın */
     margin-bottom: 0 !important;
     display: block;
-
-    /* Sadece resmi alttan %20 oranında şeffaf (görünmez) yaparak kesiyoruz */
-    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 80%);
-    mask-image: linear-gradient(to bottom, black 80%, transparent 80%);
 }
 
 .custom-lydia-absolute {
