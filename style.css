@@ -4,7 +4,7 @@ html {
     padding: 0;
     overflow-x: hidden !important;
     overflow-y: visible !important;
-    background-color: #222;
+    background-color: #000;
 }
 
 /* ITCH.IO SİSTEM YAZILARINI KREM RENGİNE DÖNÜŞTÜRÜR */
@@ -212,6 +212,25 @@ html {
     right: 24%;
     width: 26%;
     border-radius: 0.4em;
+}
+
+.custom-lydia-screen-1,
+.custom-lydia-screen-2,
+.custom-lydia-screen-3,
+.custom-lydia-screen-4 {
+    cursor: pointer;
+    pointer-events: auto !important;
+    transition: transform 0.2s ease-in-out, filter 0.2s ease;
+    transform-origin: center center;
+    z-index: 38;
+}
+
+.custom-lydia-screen-1:hover,
+.custom-lydia-screen-2:hover,
+.custom-lydia-screen-3:hover,
+.custom-lydia-screen-4:hover {
+    transform: scale(1.05);
+    z-index: 40;
 }
 
 .custom-lydia-bottom-img {
